@@ -112,4 +112,4 @@ Example: `feat(JIR-123): Implement user management for admins`
 
 <p><i>This project is part of the Avans University of Applied Sciences.</i></p>
 
-![Avans Logo](images/avans-logo.svg)
+![Avans Logo](docs/avans-logo.svg)
