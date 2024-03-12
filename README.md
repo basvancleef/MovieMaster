@@ -13,9 +13,14 @@
 
 - [Installation](#installation)
 - [Information](#basic-information)
+- [Database](#database)
+  - [Models](#models)
+  - [Migrations](#migrations)
+  - [Notes](#db-notes)
 - [Git](#git)
-- [Commits](#commits)
-- [Pull requests](#pull-requests)
+  - [Commits](#commits)
+  - [Pull requests](#pull-requests)
+- [Notes](#notes)
 
 ## Installation
 
@@ -44,6 +49,18 @@ To setup this project I used the following templates:
 - C# Library Class
 - ASP.NET Core Web Api
 - Blazor Standalone Webassembly App
+
+## Database
+```TODO: Write information about the database```
+
+### Models
+```TODO: Add information about models```
+
+### Migrations
+```TODO: Add information about migrations```
+
+### DB Notes
+```TODO: Add useful notes```
 
 ## Git
 Before you start working on the project, make sure you have the latest version of the `main` branch. <br>
@@ -106,7 +123,6 @@ Well done! You've finished your feature and you want to merge it with the `main`
 4. When you create a pull request, make sure to add the Jira issue number in the title. <br>
 
 Example: `feat(JIR-123): Implement user management for admins`
-
 
 ---
 
