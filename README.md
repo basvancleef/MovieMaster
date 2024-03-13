@@ -32,6 +32,13 @@ git clone git@github.com:basvancleef/MovieMaster.git
 3. Build the solution to restore NuGet packages.
 4. Run the application.
 
+**Note:** <br>
+This project contains [TailwindCSS](https://tailwindcss.com/) for styling. <br>
+To install TailwindCSS and watch classes, use the following command:
+```
+npm install && dotnet watch
+```
+
 ## Basic information
 This repository contains four projects:
 - MovieMaster.Database
