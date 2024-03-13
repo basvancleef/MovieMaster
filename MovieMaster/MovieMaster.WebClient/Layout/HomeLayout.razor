@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+<header class="header relative lg:overflow-hidden">
+    <div class="absolute inset-0 z-negative opacity-50">
+        <video autoplay muted loop class="object-cover w-full h-full" src="movies/hero-movie.mp4"></video>
+    </div>
+    <NavMenu/>
+    <div class="container mx-auto lg:mt-56 lg:px-16 px-4 py-4">
+        <div class="md:pl-8 md:border-l border-white">
+            <p class="text-white tracking-wide text-base font-light leading-none">Out now</p>
+            <h1 class="text-white md:text-6xl text-2xl font-bold font-sans m-0 md:leading-none">New Kids Turbo</h1>
+            <p class="text-white text-lg md:max-w-lg w-full md:my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laboriosam quae mollitia voluptatibus placeat. Libero adipisci ipsam, nobis, corrupti nesciunt id beatae laudantium quis dolorum aliquam impedit quae recusandae ad.</p>
+            <a href="#" class="btn-primary">Steam/Buy</a>
+        </div>
+    </div>
+</header>
+
+<div class="container mx-auto my-6 lg:px-16 px-4">
+    <ul class="flex items-center leading-normal text-gray-500 font-alt">
+        <li class="text-gray-300 pr-2">Our latest releases</li>
+        <li class="pr-2">|</li>
+        <li class="pr-2">
+            <a href="/movies" class="text-brand">Watch all</a>
+        </li>
+    </ul>
+</div>
+
+<main class="flex justify-center">
+    @Body
+</main>
