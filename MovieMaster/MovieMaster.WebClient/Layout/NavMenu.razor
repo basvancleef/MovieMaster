@@ -1,40 +1,31 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">MovieMaster.WebClient</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿<nav class="md:p-3 py-2 px-3 z-10">
+    <div class="container mx-auto md:flex block flex-wrap items-center justify-start">
+        <div class="flex-1 flex items-center justify-between">
+            <a href="/">
+                <img src="logo.webp" alt="GSL Logo">
+            </a>
+            <button data-menu-toggle class="md:hidden block pr-1">
+                <svg class="fill-current text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul data-menu class="md:flex hidden flex-wrap items-center justify-start text-white">
+            <a href="/" class="md:px-6 py-2">
+                Home
+            </a>
+            <a href="/movies" class="md:px-6 py-2">
+                Movies
+            </a>
+            <a href="/about" class="md:px-6 py-2">
+                About
+            </a>
+            <a href="/contact" class="md:px-6 py-2">
+                Contact
+            </a>
+            <a class="md:px-6 py-2 border border-white rounded-full" href="/sign-in">
+                Sign in
+            </a>
+        </ul>
     </div>
-</div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-}
+</nav>
